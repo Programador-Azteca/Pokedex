@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconButton from '@mui/material/IconButton';
-import CancelIcon from '@mui/icons-material/Cancel';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import SearchIcon from '@mui/icons-material/Search';
 import { Input } from '@mui/material';
 
-function SearchBar({ handleSearchClick, searchTerm, handleOnChangeSearchTerm, handleCancelSearch }) {
+function SearchBar({
+	handleSearchClick,
+	searchTerm,
+	handleOnChangeSearchTerm,
+	handleCancelSearch,
+}) {
 	return (
 		<form>
 			<Input
@@ -22,7 +27,7 @@ function SearchBar({ handleSearchClick, searchTerm, handleOnChangeSearchTerm, ha
 				<SearchIcon style={{ fill: 'blue' }} />
 			</IconButton>
 			<IconButton aria-label="clear" onClick={handleCancelSearch}>
-				<CancelIcon style={{ fill: 'blue' }} />
+				<HighlightOffIcon style={{ fill: 'blue' }} />
 			</IconButton>
 		</form>
 	);

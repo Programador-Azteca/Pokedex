@@ -28,7 +28,7 @@ function HomePage() {
 	const [loading, setLoading] = useState(true);
 	const [data, setData] = useState([]);
 	const [offset, setOffset] = useState(0);
-	const [searchTerm, setSearchTerm] = useState("");
+	const [searchTerm, setSearchTerm] = useState('');
 	const [modalStatus, setModalStatus] = useState(false);
 	const [selectedPokemon, setSelectedPokemon] = useState({
 		id: 0,
@@ -110,14 +110,13 @@ function HomePage() {
 		await setData(response);
 	};
 
-	
 	const handleOnChangeSearchTerm = (e) => {
 		e.preventDefault();
 		setSearchTerm(e.target.value);
 	};
 
 	const handleCancelSearch = () => {
-		setSearchTerm("");
+		setSearchTerm('');
 	};
 
 	const handleCloseModal = () => {
@@ -189,7 +188,7 @@ function HomePage() {
 				aria-describedby="alert-dialog-slide-description"
 			>
 				<DialogContent dividers style={{ width: 350 }}>
-						<PokemonDetail selectedPokemon={selectedPokemon} />
+					<PokemonDetail selectedPokemon={selectedPokemon} />
 				</DialogContent>
 			</Dialog>
 		</>

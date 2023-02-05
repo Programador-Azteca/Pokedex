@@ -3,12 +3,14 @@
 Asegúrate de tener Node.js y npm (o yarn) instalados en tu computadora, para manejo de versiones descarga NVM (Node version manager).
 
 ## Pasos para arrancar el proyecto
+
 1. Clonar el repositorio en tu local
 2. Crear un archivo llamado `.env` para las variables de entorno
 3. Instalar dependencias con `npm install`
 4. Arrancar proyecto con `npm start`
 
 ## Variables de entorno (.env)
+
 ```
 REACT_APP_POKEMON_ENDPOINT="https://pokeapi.co/api/v2/pokemon/"
 ```
@@ -16,6 +18,7 @@ REACT_APP_POKEMON_ENDPOINT="https://pokeapi.co/api/v2/pokemon/"
 ## Commandos para arrancar tu applicación
 
 #### `npm start`
+
 Ejecuta la applicación en modo de desarrollo.\
 Abre en el navegador la URL [http://localhost:3000](http://localhost:3000) para visualizarlo.
 
@@ -43,6 +46,5 @@ Abre en el navegador la URL [http://localhost:3000](http://localhost:3000) para 
 ### [Node Js](https://nodejs.org/en/)
 
 ### [Material UI](https://mui.com/material-ui/getting-started/overview/)
-
 
 ### [Poke API](https://pokeapi.co/docs/v2)
