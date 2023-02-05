@@ -1,0 +1,14 @@
+.container {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	padding: 15px;
+}
+
+.pagination ul {
+	justify-content: center;
+}
+
+.section {
+	margin: 15px 0 15px 0;
+}
