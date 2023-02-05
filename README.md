@@ -31,6 +31,7 @@ Abre en el navegador la URL [http://localhost:3000](http://localhost:3000) para 
 5. Sigamos con la instalación de Material UI ejecutando
    ```
    npm install @mui/material @emotion/react @emotion/styled
+   npm install @mui/icons-material
    ```
 
 ## Recursos y documentación
