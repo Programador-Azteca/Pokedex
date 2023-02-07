@@ -1,4 +1,5 @@
 {
+	"parser": "@typescript-eslint/parser",
 	"env": {
 		"browser": true,
 		"es2021": true,
@@ -15,6 +16,34 @@
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [],
+				"moduleDirectory": ["src", "node_modules"]
+			}
+		}
+	},
 	"plugins": ["react"],
-	"rules": {}
+	"rules": {
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"": "never",
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"react/jsx-filename-extension": [
+			1,
+			{ "extensions": [".tsx", ".ts", ".jsx"] }
+		],
+		"react/jsx-props-no-spreading": "off",
+		"camelcase": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+	}
 }
