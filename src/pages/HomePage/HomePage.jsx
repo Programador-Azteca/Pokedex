@@ -4,7 +4,6 @@ import {
 	ButtonGroup,
 	Grid,
 	Dialog,
-	Slide,
 	DialogContent,
 } from '@mui/material';
 import './HomePage.css';
@@ -18,11 +17,6 @@ import {
 import PokemonDetail from '../../components/PokemonDetail/PokemonDetail';
 
 const REQUEST_LIMIT = 20;
-
-const Transition = React.forwardRef((props, ref) => (
-	// eslint-disable-next-line react/jsx-props-no-spreading
-	<Slide direction="up" ref={ref} {...props} />
-));
 
 function HomePage() {
 	const [loading, setLoading] = useState(true);
@@ -182,7 +176,6 @@ function HomePage() {
 			<Dialog
 				className="dialog-container"
 				open={modalStatus}
-				TransitionComponent={Transition}
 				keepMounted
 				onClose={handleCloseModal}
 				aria-describedby="alert-dialog-slide-description"
